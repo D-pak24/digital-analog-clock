@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Saira+Condensed:wght@200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Digital-7";
+  src: url(assets/digital-7.ttf);
+}
+
+html,
+body {
+  background-color: #252525;
+  height: 100vh;
+  min-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: rgba(61, 61, 61, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(11, 11, 15, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.clock::before {
+  content: " ";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 42%;
+  top: 20%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 68px 0px rgba(248, 255, 46, 0.9);
+  -moz-box-shadow: 0px 0px 68px 0px rgba(248, 255, 46, 0.9);
+  box-shadow: 0px 0px 68px 0px rgba(248, 255, 46, 0.9);
+  border-radius: 50%;
+  z-index: 2;
+}
+.clock::after {
+  content: " ";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: #c59070;
+  box-shadow: inset 0 0 10px #ffaf7e;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+}
+.numbers {
+  inset: 1px;
+  position: absolute;
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  transform: rotate(calc(30deg * var(--i)));
+}
+.numbers b {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 200;
+  font-size: 1.3em;
+  display: inline-block;
+  transform: rotate(calc(-30deg * var(--i)));
+}
+.n-12 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.n-3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.n-6 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.n-9 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.needle {
+  right: 50%;
+  background-color: #c59070;
+  position: absolute;
+  top: 50%;
+  border: 1px ridge #daa520;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  box-shadow: inset 0 0 10px#c59070;
+}
+.hrs {
+  width: 28%;
+  height: 10px;
+  z-index: 3;
+}
+.hrs::after {
+  content: " ";
+  position: absolute;
+  width: 130%;
+  height: 10px;
+  background-color: #c59070;
+  box-shadow: inset 0 0 10px #c59070;
+}
+.min {
+  width: 33%;
+  height: 6px;
+  z-index: 4;
+}
+.min::before {
+  content: " ";
+  position: absolute;
+  width: 130%;
+  height: 6px;
+  background-color: #c59070;
+  box-shadow: inset 0 0 10px#c59070;
+}
+.sec {
+  width: 37%;
+  height: 2px;
+  z-index: 5;
+}
+.sec::before {
+  content: " ";
+  position: absolute;
+  width: 130%;
+  height: 2px;
+  background-color: #c59070;
+  box-shadow: inset 0 0 10px #c59070;
+}
+.circle {
+  position: absolute;
+  left: 35.5%;
+  top: 28%;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 3px #bc8945 solid;
+}
+.circle::after {
+  content: " ";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: 73%;
+  border-radius: 50%;
+  border: 35px solid black;
+}
+.digital {
+  font-family: "Digital-7";
+  position: absolute;
+  border: 5px #c1bb99 ridge;
+  left: 30%;
+  top: 61%;
+  width: 40%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  background-color: #bbc7af;
+}
+.dm {
+  height: 100%;
+  font-family: "Digital-7";
+  display: flex;
+  flex-direction: row;
+}
+.dm h1 {
+  font-size: 2.5em;
+  padding: 10px 5px 0 5px;
+}
+.month {
+  margin-right: 3px;
+}
+.month::before {
+  content: "Month";
+  position: absolute;
+  left: 5%;
+  bottom: 74%;
+  font-size: 0.3em;
+  font-weight: bolder;
+}
+.date {
+  border-right: 1px black solid;
+}
+.date::before {
+  content: "Date";
+  position: absolute;
+  left: 40%;
+  bottom: 74%;
+  font-size: 0.3em;
+  font-weight: bolder;
+}
+.weekdays {
+  height: 100%;
+}
+.day {
+  height: 100%;
+  margin-top: 30%;
+  margin-left: 10%;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    height: 110vh;
+  }
+}
+@media (max-width: 380px) {
+  .clock {
+    width: 350px;
+    height: 350px;
+  }
+  .numbers b {
+    font-size: 1.1em;
+  }
+  .clock::before {
+    width: 60px;
+    height: 60px;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    left: 36.5%;
+  }
+  .circle::after {
+    width: 30px;
+    height: 30px;
+    border-width: 30px;
+  }
+  .digital {
+    width: 38%;
+    height: 13%;
+  }
+  .dm h1 {
+    font-size: 1.8em;
+  }
+  .day {
+    font-size: 1.5em;
+  }
+}
