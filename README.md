@@ -12,7 +12,7 @@
 <br>
 <h3>What i learned</h3>
 <br>
-<p>Learned about <b><i>@fontface</i></b> property and got the more experience in pseudo classes of <b><i>before </i></b>and<b><i> after</i></b> classes</p>
+<p>Learned about <b><i>@fontface</i></b> property and got the more experience in pseudo elements of <b><i>before </i></b>and<b><i> after</i></b> elements</p>
 <h3>Usefull resources</h3>
 <br>
 https://imagecolorpicker.com/en
