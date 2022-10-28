@@ -8,7 +8,9 @@
 <br>
 <h3 align="center">Inspiration of Clock Design</h3>
 <br>
-<img align="center" src = "https://github.com/D-pak24/digital-analog-clock/blob/827d75cebd41b3bb6f50ca62ca611851afb02c58/asset/clock.jpg">
+<div align="center">
+<img src = "https://github.com/D-pak24/digital-analog-clock/blob/827d75cebd41b3bb6f50ca62ca611851afb02c58/asset/clock.jpg">
+</div>
 <br>
 <h3>What i learned</h3>
 <br>
