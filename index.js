@@ -10,7 +10,7 @@ function analogClock() {
     let weekDay = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     let today = weekDay[time.getDay()];
     let date = time.getDate();
-    let month = time.getMonth();
+    let month = time.getMonth() + 1;
     const seconds = time.getSeconds();
     const mins = time.getMinutes();
     const hr = time.getHours();
