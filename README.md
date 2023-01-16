@@ -2,7 +2,7 @@
 <br>
 <h2 align="center">Project Preview</h2>
 <br>
-<img  src = "https://github.com/D-pak24/digital-analog-clock/blob/827d75cebd41b3bb6f50ca62ca611851afb02c58/asset/Preview%20Page.png">
+<img  src="https://github.com/D-pak24/digital-analog-clock/blob/827d75cebd41b3bb6f50ca62ca611851afb02c58/asset/Preview%20Page.png">
 <br>
 [Live]:https://dpak24-digital-analog-clock.netlify.app/
 <br>
